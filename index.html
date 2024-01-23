@@ -10,53 +10,88 @@
         border: 5px solid rgb(55, 208, 175) ;
         margin-right: 10px;
         margin-left: 200px;
-        margin-top: 50px;
+        margin-top: 80px;
         padding: 10px;
       }
-      p.self_desc {
-        font-weight: bold;
-        color: white;
+      p.greeding {
+        color: rgb(55, 208, 175);
+        font-style: normal;
+        font-size: 25px;
+        margin: 5px; /* Added to remove the default margin */
         margin-left: 200px; /* Added margin-left to align with the image */
+        margin-top: 60px;
       }
       p.name {
-        font-size: 50px;
-        font-style: Roboto;
+        font-size: 60px;
+        font-style: normal ;
         color: white;
+        margin: 5px; /* Added to remove the default margin */
+        margin-left: 200px; /* Added margin-left to align with the image */
+
+      }
+      p.self-description {
+        font-size: 20px;
+        font-style: normal;
+        color: white;
+        margin: 5px; /* Added to remove the default margin */
         margin-left: 200px; /* Added margin-left to align with the image */
       }
-      /* Add styles for the navigation bar */
-      .navbar {
-        overflow: hidden;
-        background-color: #010D1B;
-      }
-      .navbar a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-      .navbar a:hover {
-        background-color: #010D1B;
-        color: white;
-      }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #020F1F;
+  margin-top: 20px;
+}
+
+.navbar-links {
+  padding-right: 50px; /* Adjust this value as needed */
+}
+
+.navbar-links a { /* Change .navbar a to .navbar-links a */
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar-links a:hover { /* Change .navbar a:hover to .navbar-links a:hover */
+  background-color: #010D1B;
+  color: white;
+}
+
+.navbar-name {
+  color: #f2f2f2;
+  font-size: 22px;
+  padding-left: 200px; /* Adjust this value to align with the profile picture */
+}
+        
     </style>
   </head>
   <body style="background-color: #020F1F">
+
     <!-- Navigation bar -->
-    <div class="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+<div class="navbar">
+  <div class="navbar-name"><strong>STEVEN CHIANG</strong></div>
+  <div class="navbar-links"> <!-- Add this line -->
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#resume">Resume</a> <!-- I added this as an example, replace with your actual link -->
+  </div> <!-- Add this line -->
+</div>
 
     </div class="image-with-text">
     <img
       src="images/profile_pic.jpg"
       alt="profile picture could not be found"
     />
-    <p class="self_desc">HEY THERE,</p>
+    <p class="greeding">HEY THERE,</p>
     <p class="name"> <strong>I'm Steven.</strong></p>
+    <p class="self-description">
+      I'm a software developer and a student at the Iowa State University.
+    Welcome to my corner of the internet. I'm glad that you're here!</p>
   </div>
 
   </body>
