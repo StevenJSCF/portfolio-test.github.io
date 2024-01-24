@@ -3,7 +3,7 @@
   <head>
     <title>My first web page</title>
     <style>
-      img {
+      img.profile_pic{
         width: 200px;
         height: 200px;
         border-radius: 50%;
@@ -13,6 +13,13 @@
         margin-top: 80px;
         padding: 10px;
       }
+      img.github_logo{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 50px; /* Add some space between the logo and the name */
+      }
+
       p.greeding {
         color: rgb(55, 208, 175);
         font-style: normal;
@@ -64,6 +71,8 @@
 .navbar-name {
   color: #f2f2f2;
   font-size: 22px;
+  display: flex;
+  align-items: center;
   padding-left: 200px; /* Adjust this value to align with the profile picture */
 }
         
@@ -71,26 +80,31 @@
   </head>
   <body style="background-color: #020F1F">
 
-    <!-- Navigation bar -->
-<div class="navbar">
-  <div class="navbar-name"><strong>STEVEN CHIANG</strong></div>
-  <div class="navbar-links"> <!-- Add this line -->
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <a href="#resume">Resume</a> <!-- I added this as an example, replace with your actual link -->
-  </div> <!-- Add this line -->
-</div>
+    <div class="navbar">
+      <div class="navbar-name">
+        Joshua Steven Chiang     
+        <img class="github_logo"
+        src="images/github_logo.png" 
+        alt="GitHub Logo"
+        />
+      </div>
+      <div class="navbar-links">
+        <a href="index.html">Home</a> <!-- Replace with the URL of your home page -->
+        <a href="about.html">About</a> <!-- Replace with the URL of your about page -->
+        <a href="projects.html">Projects</a> <!-- Replace with the URL of your contact page -->
+        <a href="resume.html">Resume</a> <!-- Replace with the URL of your resume page -->
+      </div>
+    </div>
 
     </div class="image-with-text">
-    <img
+    <img class="profile_pic"
       src="images/profile_pic.jpg"
       alt="profile picture could not be found"
     />
     <p class="greeding">HEY THERE,</p>
     <p class="name"> <strong>I'm Steven.</strong></p>
     <p class="self-description">
-      I'm a software developer and a student at the Iowa State University.
+      I'm a software developer and a student at Iowa State University.
     Welcome to my corner of the internet. I'm glad that you're here!</p>
   </div>
 
