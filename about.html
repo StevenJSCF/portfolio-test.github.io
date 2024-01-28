@@ -1,11 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <title>My first web page</title>
+    <style>
+      img.github_logo {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 50px; /* Add some space between the logo and the name */
+        border: 2px solid white;
+      }
+
+      img.linkedin_logo {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 15px; /* Add some space between the logo and the name */
+        margin-bottom: 1px;
+        border: 2px solid white;
+      }
+
+      p.greeding{
+        color: white;
+        font-style: normal;
+        font-size: 30px;
+        margin: 5px; /* Added to remove the default margin */
+        margin-left: 200px; /* Added margin-left to align with the image */
+        margin-top: 60px;
+      }
+
+      p.introduction{
+        color: white;
+        font-style: normal;
+        font-size: 20px;
+        margin: 5px; /* Added to remove the default margin */
+        margin-left: 200px; /* Added margin-left to align with the image */
+        margin-right: 200px;
+        margin-top: 20px;
+      }
+      p{
+        color: white;
+        font-style: normal;
+        font-size: 20px;
+        margin: 5px; /* Added to remove the default margin */
+        margin-left: 200px; /* Added margin-left to align with the image */
+        margin-right: 200px;
+        margin-top: 20px;
+      }
+
+    h1 {
+       color: rgb(55, 208, 175);
+        font-style: normal;
+        font-size: 30px;
+        margin: 5px; /* Added to remove the default margin */
+        margin-left: 200px; /* Added margin-left to align with the image */
+        margin-right: 200px;
+        margin-top: 40px;
+        text-decoration: underline; /* Add this line to underline the text */
+    }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: #020f1f;
+        margin-top: 20px;
+      }
+
+      .navbar-links {
+        padding-right: 50px; /* Adjust this value as needed */
+      }
+
+      .navbar-links a {
+        /* Change .navbar a to .navbar-links a */
+        color: #f2f2f2;
+        text-align: center;
+        padding: 10px 14px;
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      .navbar-links a:hover {
+        /* Change .navbar a:hover to .navbar-links a:hover */
+        background-color: #010d1b;
+        color: white;
+      }
+
+      .navbar-name {
+        color: #f2f2f2;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        padding-left: 200px; /* Adjust this value to align with the profile picture */
+      }
+    </style>
+  </head>
+  <body style="background-color: #020f1f">
+    <div class="navbar">
+      <div class="navbar-name">
+        Joshua Steven Chiang
+        <a href="https://github.com/StevenJSCF" target="_blank">
+          <img
+            class="github_logo"
+            src="images/github_logo.png"
+            alt="GitHub Logo"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/steven-chiang-ab9224268/"
+          target="_blank"
+        >
+          <img
+            class="linkedin_logo"
+            src="images/linkedin_logo.png"
+            alt="LinkedIn Logo"
+          />
+        </a>
+      </div>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+      </div>
+    </div>
+
+
+
+    <p class = "greeding"><strong>Hello, I'm Joshua Steven Chiang!</strong></p>
+    <p class = "introduction">
+        I'm a passionate software engineering student born in Venezuela, 
+        and I go by my middle name, Steven. Currently pursuing a major in Software Engineering at Iowa State University, 
+        I thrive on the challenges of creating innovative solutions that make a meaningful impact.
+    </p>
+
+    <h1>Background</h1>
+        <p>
+            Originally from Venezuela, my journey into the world of technology began with a fascination for 
+            problem-solving and a deep curiosity about how things work. This curiosity has guided me through my 
+            educational path, leading me to specialize in Software Engineering.
+        </p>
+    <h1>Academic Persuits</h1>
+        <p>
+            I'm currently immersed in the dynamic field of software engineering, where I'm honing my skills in 
+            various programming languages, software development methodologies, and problem-solving techniques. 
+            The fast-paced and ever-evolving nature of technology excites me, and I'm dedicated to staying at the 
+            forefront of this dynamic industry.
+        </p>
+    <h1>Passion for coding</h1>
+        <p>
+            Coding, for me, is not just a set of instructions for a computer; it's a language through which 
+            I can bring ideas to life. From designing elegant algorithms to building user-friendly interfaces, 
+            I find joy in every aspect of the software development process.
+        </p>
+
+
+ 
+  </body>
 </html>

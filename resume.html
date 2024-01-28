@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>This is where I put my resume</h1>
-</body>
+<html>
+  <head>
+    <title>My first web page</title>
+    <style>
+      img.resume_pic {
+        width: 50%;
+        height: 50%;
+        margin-right: 10px;
+        margin-left: 450px;
+        margin-top: 50px;
+        padding: 10px;
+      }
+
+      img.github_logo {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 50px; /* Add some space between the logo and the name */
+        border: 2px solid white;
+      }
+
+      img.linkedin_logo {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 15px; /* Add some space between the logo and the name */
+        margin-bottom: 1px;
+        border: 2px solid white;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: #020f1f;
+        margin-top: 20px;
+      }
+
+      .navbar-links {
+        padding-right: 50px; /* Adjust this value as needed */
+      }
+
+      .navbar-links a {
+        /* Change .navbar a to .navbar-links a */
+        color: #f2f2f2;
+        text-align: center;
+        padding: 10px 14px;
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      .navbar-links a:hover {
+        /* Change .navbar a:hover to .navbar-links a:hover */
+        background-color: #010d1b;
+        color: white;
+      }
+
+      .navbar-name {
+        color: #f2f2f2;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        padding-left: 200px; /* Adjust this value to align with the profile picture */
+      }
+    </style>
+  </head>
+  <body style="background-color: #020f1f">
+    <div class="navbar">
+      <div class="navbar-name">
+        Joshua Steven Chiang
+        <a href="https://github.com/StevenJSCF" target="_blank">
+          <img
+            class="github_logo"
+            src="images/github_logo.png"
+            alt="GitHub Logo"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/steven-chiang-ab9224268/"
+          target="_blank"
+        >
+          <img
+            class="linkedin_logo"
+            src="images/linkedin_logo.png"
+            alt="LinkedIn Logo"
+          />
+        </a>
+      </div>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+      </div>
+    </div>
+
+    <img class="resume_pic" src="images/resume_pic.png" alt="resume photo" />
+  </body>
 </html>

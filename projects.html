@@ -1,11 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <title>My first web page</title>
+    <style>
+      img.github_logo {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 50px; /* Add some space between the logo and the name */
+        border: 2px solid white;
+      }
+
+      img.linkedin_logo {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 15px; /* Add some space between the logo and the name */
+        margin-bottom: 1px;
+        border: 2px solid white;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: #020f1f;
+        margin-top: 20px;
+      }
+
+      .navbar-links {
+        padding-right: 50px; /* Adjust this value as needed */
+      }
+
+      .navbar-links a {
+        /* Change .navbar a to .navbar-links a */
+        color: #f2f2f2;
+        text-align: center;
+        padding: 10px 14px;
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      .navbar-links a:hover {
+        /* Change .navbar a:hover to .navbar-links a:hover */
+        background-color: #010d1b;
+        color: white;
+      }
+
+      .navbar-name {
+        color: #f2f2f2;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        padding-left: 200px; /* Adjust this value to align with the profile picture */
+      }
+
+
+
+      .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.project {
+  background-color: #fff;
+  width: 30%; /* Adjust as needed */
+  margin-left: 150px; /* Adjust as needed */
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.964);
+}
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project h3 {
+  margin: 10px 0; /* Adjust as needed */
+}
+
+.project p {
+  margin: 10px 0; /* Adjust as needed */
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #020f1f;
+  color: #fff;
+  text-decoration: none;
+}
+    </style>
+  </head>
+  <body style="background-color: #020f1f">
+    <div class="navbar">
+      <div class="navbar-name">
+        Joshua Steven Chiang
+        <a href="https://github.com/StevenJSCF" target="_blank">
+          <img
+            class="github_logo"
+            src="images/github_logo.png"
+            alt="GitHub Logo"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/steven-chiang-ab9224268/"
+          target="_blank"
+        >
+          <img
+            class="linkedin_logo"
+            src="images/linkedin_logo.png"
+            alt="LinkedIn Logo"
+          />
+        </a>
+      </div>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+      </div>
+    </div>
+
+    <div class="projects">
+      <div class="project">
+        <img src="path/to/project-screenshot.png" alt="Project Screenshot">
+        <h3>Pokemon Game</h3>
+        <p>Project description goes here.</p>
+        <a href="project-link.html" target="_blank">View Project</a>
+      </div>
+      <!-- Repeat for other projects -->
+    </div>
+
+ 
+  </body>
 </html>
